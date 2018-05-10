@@ -78,15 +78,11 @@ public class Network.Indicator : Wingpanel.Indicator {
     }
 
     public override void opened () {
-        if (popover_widget != null) {
-            popover_widget.opened ();
-        }
+        // TODO
     }
 
     public override void closed () {
-        if (popover_widget != null) {
-            popover_widget.closed ();
-        }
+        // TODO
     }
 }
 
