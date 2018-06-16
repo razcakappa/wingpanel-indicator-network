@@ -17,6 +17,9 @@
 
 public abstract class Network.AbstractEtherInterface : Network.WidgetNMInterface {
 
+	protected Gtk.ListBox ethernet_list;
+	protected Gtk.Stack placeholder;
+
 	public override void update_name (int count) {
 		var name = device.get_description ();
 
@@ -30,6 +33,13 @@ public abstract class Network.AbstractEtherInterface : Network.WidgetNMInterface
 				display_title = name;
 			}
 		}
+	}
+
+	construct {
+		placeholder = new Gtk.Stack ();
+		placeholder.visible = true;
+
+		ethernet_list = new Gtk.ListBox ();
 	}
 
 	public override void update () {

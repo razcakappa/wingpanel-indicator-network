@@ -18,6 +18,7 @@
 
 public class Network.EtherInterface : Network.AbstractEtherInterface {
     private Wingpanel.Widgets.Switch ethernet_item;
+    Gtk.Revealer revealer;
 
     public EtherInterface (NM.Client nm_client, NM.Device? _device) {
         device = _device;
@@ -47,6 +48,23 @@ public class Network.EtherInterface : Network.AbstractEtherInterface {
         add (ethernet_item);
 
         device.state_changed.connect (() => { update (); });
+    }
+
+    construct {
+        orientation = Gtk.Orientation.VERTICAL;
+        ethernet_item = new Wingpanel.Widgets.Switch ("");
+        ethernet_item.get_style_context ().add_class ("h4");
+        pack_start (ethernet_item);
+
+        var scrolled_box = new Gtk.ScrolledWindow (null, null);
+        scrolled_box.hscrollbar_policy = Gtk.PolicyType.NEVER;
+        scrolled_box.max_content_height = 512;
+        scrolled_box.propagate_natural_height = true;
+        scrolled_box.add (ethernet_item);
+
+        revealer = new Gtk.Revealer ();
+        revealer.add (scrolled_box);
+        pack_start (revealer);
     }
 
     public override void update () {
