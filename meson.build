@@ -29,6 +29,7 @@ shared_module(
     'src/common/Widgets/VpnMenuItem.vala',
     'src/common/Widgets/WidgetNMInterface.vala',
     'src/common/Widgets/WifiMenuItem.vala',
+    'src/common/Widgets/EthernetMenuItem.vala',
     'src/Widgets/DisplayWidget.vala',
     'src/Widgets/EtherInterface.vala',
     'src/Widgets/ModemInterface.vala',

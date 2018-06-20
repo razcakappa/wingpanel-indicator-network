@@ -18,7 +18,9 @@
 
 public class Network.EtherInterface : Network.AbstractEtherInterface {
     private Wingpanel.Widgets.Switch ethernet_item;
+	protected Gtk.ListBox ethernet_list;
     Gtk.Revealer revealer;
+	protected Gtk.Stack placeholder;
 
     public EtherInterface (NM.Client nm_client, NM.Device? _device) {
         device = _device;
@@ -51,16 +53,30 @@ public class Network.EtherInterface : Network.AbstractEtherInterface {
     }
 
     construct {
-        orientation = Gtk.Orientation.VERTICAL;
-        ethernet_item = new Wingpanel.Widgets.Switch ("");
-        ethernet_item.get_style_context ().add_class ("h4");
-        pack_start (ethernet_item);
+
+        EthernetMenuItem item = new EthernetMenuItem();
+
+        //previous_wifi_item = item;
+        item.set_visible(true);
+        //item.user_action.connect (wifi_activate_cb);
+
+        //wifi_list.add (item);
+        //wifi_list.show_all ();
+
+        update ();
+
+		placeholder = new Gtk.Stack ();
+		placeholder.visible = true;
+
+		ethernet_list = new Gtk.ListBox ();
+		//ethernet_list.set_sort_func (sort_func);
+		ethernet_list.set_placeholder (placeholder);
 
         var scrolled_box = new Gtk.ScrolledWindow (null, null);
         scrolled_box.hscrollbar_policy = Gtk.PolicyType.NEVER;
         scrolled_box.max_content_height = 512;
         scrolled_box.propagate_natural_height = true;
-        scrolled_box.add (ethernet_item);
+        scrolled_box.add (ethernet_list);
 
         revealer = new Gtk.Revealer ();
         revealer.add (scrolled_box);
