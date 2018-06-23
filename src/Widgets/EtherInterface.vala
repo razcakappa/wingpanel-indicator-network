@@ -54,18 +54,19 @@ public class Network.EtherInterface : Network.AbstractEtherInterface {
 
     construct {
 
-        EthernetMenuItem item = new EthernetMenuItem();
+        //EthernetMenuItem item = new EthernetMenuItem();
 
         //previous_wifi_item = item;
-        item.set_visible(true);
+        //item.set_visible(true);
         //item.user_action.connect (wifi_activate_cb);
 
         //wifi_list.add (item);
         //wifi_list.show_all ();
 
-        update ();
+        //update ();
 
 		placeholder = new Gtk.Stack ();
+        placeholder.visible_child_name = "Hello Vala, Hello GTK, Hello Linux!!!";
 		placeholder.visible = true;
 
 		ethernet_list = new Gtk.ListBox ();
@@ -82,6 +83,18 @@ public class Network.EtherInterface : Network.AbstractEtherInterface {
         revealer.add (scrolled_box);
         pack_start (revealer);
     }
+
+	protected Gtk.Label construct_placeholder_label (string text, bool title) {
+		var label = new Gtk.Label (text);
+		label.visible = true;
+		label.use_markup = true;
+		label.wrap = true;
+		label.wrap_mode = Pango.WrapMode.WORD_CHAR;
+		label.max_width_chars = 30;
+		label.justify = Gtk.Justification.CENTER;
+
+		return label;
+	}
 
     public override void update () {
         switch (device.get_state ()) {
