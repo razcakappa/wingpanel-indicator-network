@@ -1,123 +1,148 @@
-# Dutch translation for pantheon-greeter
-# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
-# This file is distributed under the same license as the pantheon-greeter package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: pantheon-greeter\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-17 11:07+0100\n"
-"PO-Revision-Date: 2018-06-07 00:08+0000\n"
+"POT-Creation-Date: 2018-05-02 11:10-0700\n"
+"PO-Revision-Date: 2018-05-05 20:57+0000\n"
 "Last-Translator: Dieter Debast <dieter_debast@hotmail.com>\n"
-"Language-Team: Dutch <https://weblate.elementary.io/projects/desktop/greeter/"
-"nl/>\n"
+"Language-Team: Dutch <https://weblate.elementary.io/projects/wingpanel"
+"/wingpanel-indicator-network/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.18\n"
-"X-Launchpad-Export-Date: 2017-03-09 05:44+0000\n"
+"X-Launchpad-Export-Date: 2016-11-29 05:01+0000\n"
 
-#: compositor/WindowManager.vala:431
-msgid "Does the display look OK?"
+#: src/Indicator.vala:29
+msgid "Network"
+msgstr "Netwerk"
+
+#: src/Indicator.vala:30
+msgid "Network indicator"
+msgstr "Netwerkindicator"
+
+#: src/common/Widgets/AbstractEtherInterface.vala:25
+#, c-format
+msgid "Virtual network: %s"
+msgstr "Virtueel netwerk: %s"
+
+#: src/common/Widgets/AbstractEtherInterface.vala:28
+msgid "Wired"
+msgstr "Bekabeld"
+
+#: src/common/Widgets/AbstractModemInterface.vala:25
+#, c-format
+msgid "Mobile Broadband: %s"
 msgstr ""
 
-#: compositor/WindowManager.vala:434
-msgid "Keep This Configuration"
+#: src/common/Widgets/AbstractModemInterface.vala:27
+msgid "Mobile Broadband"
 msgstr ""
 
-#: compositor/WindowManager.vala:435
-msgid "Restore Previous Configuration"
+#: src/common/Widgets/AbstractModemInterface.vala:33
+msgid "Modem"
 msgstr ""
 
-#: src/PasswordEntry.vala:24 src/PasswordEntry.vala:25
-msgid "Password"
-msgstr ""
+#: src/common/Widgets/AbstractVpnInterface.vala:36
+#: src/common/Widgets/AbstractVpnInterface.vala:59
+msgid "VPN"
+msgstr "VPN"
 
-#: src/PasswordEntry.vala:28 src/Cards/UserCard.vala:60
-msgid "Log In"
-msgstr "Aanmelden"
+#: src/common/Widgets/AbstractWifiInterface.vala:49
+msgid "No Access Points Available"
+msgstr "Geen Toegangspunten Beschikbaar"
 
-#: src/MainWindow.vala:53
-msgid "Log in as Guest"
-msgstr ""
+#: src/common/Widgets/AbstractWifiInterface.vala:63
+msgid "Scanning for Access Points…"
+msgstr "Scannen naar toegangspunten…"
 
-#: src/MainWindow.vala:55
-#, fuzzy
-msgid "Manual Login…"
-msgstr "Handmatig inloggen"
+#: src/common/Widgets/AbstractWifiInterface.vala:106
+msgid "Wireless"
+msgstr "Draadloos"
 
-#: src/CapsLockRevealer.vala:27
-msgid "Caps Lock is on"
-msgstr ""
+#: src/common/Widgets/VpnMenuItem.vala:53
+msgid "This Virtual Private Network could not be connected to."
+msgstr "Kon geen verbinding maken met dit Virtueel Privaat Netwerk."
 
-#: src/Cards/ManualCard.vala:15
-msgid "Manual Login"
-msgstr "Handmatig inloggen"
+#: src/common/Widgets/WidgetNMInterface.vala:22
+msgid "Unknown device"
+msgstr "Onbekend apparaat"
 
-#: src/Cards/ManualCard.vala:22
-msgid "Username"
-msgstr ""
+#: src/common/Widgets/WidgetNMInterface.vala:37
+#, c-format
+msgid "Unknown type: %s "
+msgstr "Onbekend type: %s "
 
-#: src/Cards/ManualCard.vala:26
-msgid "Try username"
-msgstr ""
+#: src/common/Widgets/WifiMenuItem.vala:64
+msgid "This wireless network could not be connected to."
+msgstr "Kan geen verbinding met dit wifi-netwerk maken."
 
-#~ msgid "Swipe your finger"
-#~ msgstr "Swipe uw vinger"
+#: src/common/Widgets/WifiMenuItem.vala:130
+msgid "This network uses 40/64-bit WEP encryption"
+msgstr "Dit netwerk gebruikt 40/64-bits WEP-encryptie"
 
-#~ msgid "Place your finger"
-#~ msgstr "Plaats uw vinger"
+#: src/common/Widgets/WifiMenuItem.vala:133
+msgid "This network uses 104/128-bit WEP encryption"
+msgstr "Dit netwerk gebruikt 104/128-bits WEP-encryptie"
 
-#~ msgid "Remove your finger and try again."
-#~ msgstr "Verwijder uw vinger en probeer opnieuw."
+#: src/common/Widgets/WifiMenuItem.vala:136
+msgid "This network uses WPA encryption"
+msgstr "Dit netwerk gebruikt WPA-encryptie"
 
-#~ msgid "Center your finger and try again."
-#~ msgstr "Centreer uw vinger en probeer opnieuw."
+#: src/common/Widgets/WifiMenuItem.vala:139
+msgid "This network uses encryption"
+msgstr "Dit netwerk gebruikt encryptie"
 
-#~ msgid "Swipe your finger again"
-#~ msgstr "Veeg uw vinger opnieuw"
+#: src/common/Widgets/WifiMenuItem.vala:141
+msgid "This network is unsecured"
+msgstr "Dit netwerk is onbeveiligd"
 
-#~ msgid "Remove your finger, and try swiping your finger again"
-#~ msgstr "Neem uw vinger weg en probeer deze opnieuw te vegen"
+#: src/Widgets/PopoverWidget.vala:60
+msgid "Connect to Hidden Network…"
+msgstr "Connecteer met onzichtbaar netwerk…"
 
-#~ msgid "Place your finger on the reader again"
-#~ msgstr "Plaats uw vinger opnieuw op de scanner"
+#: src/Widgets/PopoverWidget.vala:64
+msgid "Network Settings…"
+msgstr "Netwerkinstellingen…"
 
-#~ msgid "Guest session"
-#~ msgstr "Gastsessie"
+#~ msgid "There are no wireless access points within range."
+#~ msgstr "Er bevinden zich geen draadloze toegangspunten binnen bereik."
 
-#~ msgid "%A, %B %e"
-#~ msgstr "%A, %e %B"
+#~ msgid "Wireless Is Disabled"
+#~ msgstr "Draadloos is uitgeschakeld"
 
-#~ msgid "%l:%M"
-#~ msgstr "%k:%M"
+#~ msgid "Enable wireless to discover nearby wireless access points."
+#~ msgstr ""
+#~ "Schakel wifi in om naar draadloze toegangspunten in de buurt te zoeken."
 
-#~ msgid " %p"
-#~ msgstr " %p"
+#~ msgid "No VPN Available"
+#~ msgstr "Geen VPN beschikbaar"
 
-#~ msgid "Login"
-#~ msgstr "Aanmelden"
+#~ msgid "Hotspot"
+#~ msgstr "Hotspot"
 
-#~ msgid "HighContrast"
-#~ msgstr "Hoog contrast"
+#~ msgid "Hotspot %s"
+#~ msgstr "Hotspot %s"
 
-#~ msgid "Suspend"
-#~ msgstr "Pauzestand"
+#~ msgid "Disconnected"
+#~ msgstr "Niet verbonden"
 
-#~ msgid "%A, %B %e%v"
-#~ msgstr "%A %e %B"
+#~ msgid "Connected"
+#~ msgstr "Verbonden"
 
-#~ msgid "Shutdown"
-#~ msgstr "Afsluiten"
+#~ msgid "Failed"
+#~ msgstr "Mislukt"
 
-#~ msgid "Hibernate"
-#~ msgstr "Slaapstand"
+#~ msgid "Connecting"
+#~ msgstr "Verbinding maken"
 
-#~ msgid "Restart"
-#~ msgstr "Herstarten"
+#~ msgid "Cable unplugged"
+#~ msgstr "Kabel niet verbonden"
 
-#~ msgid "Onscreen Keyboard"
-#~ msgstr "Schermtoetsenbord"
+#~ msgid "Airplane mode enabled"
+#~ msgstr "Vliegtuigmodus ingeschakeld"
+
+#~ msgid "Unknown"
+#~ msgstr "Onbekend"

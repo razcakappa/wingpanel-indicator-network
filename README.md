@@ -1,18 +1,17 @@
-# Pantheon Greeter
-[![l10n](https://l10n.elementary.io/widgets/desktop/greeter/svg-badge.svg)](https://l10n.elementary.io/projects/desktop/greeter)
+# Wingpanel Network Indicator
+[![l10n](https://l10n.elementary.io/widgets/wingpanel/wingpanel-indicator-network/svg-badge.svg)](https://l10n.elementary.io/projects/wingpanel/wingpanel-indicator-network)
+
+![Screenshot](data/screenshot.png?raw=true)
 
 ## Building and Installation
 
 You'll need the following dependencies:
 
-* gnome-settings-daemon >= 3.27
-* libgdk-pixbuf2.0-dev
+* gobject-introspection
 * libgranite-dev
-* libgtk-3-dev
-* liblightdm-gobject-1-dev
-* libmutter
+* libnm-dev
+* libnma-dev
 * libwingpanel-2.0-dev
-* libx11-dev
 * meson
 * valac
 
@@ -25,11 +24,3 @@ Run `meson` to configure the build environment and then `ninja` to build
 To install, use `ninja install`
 
     sudo ninja install
-
-## Testing & Debugging
-
-Run LightDM in test mode with Xephyr:
-
-    lightdm --test-mode --debug
-
-You can then find the debug log in `~/.cache/lightdm/log`

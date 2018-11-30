@@ -1,137 +1,147 @@
-# Finnish translation for pantheon-greeter
-# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
-# This file is distributed under the same license as the pantheon-greeter package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: pantheon-greeter\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-17 11:07+0100\n"
-"PO-Revision-Date: 2018-11-18 00:07+0000\n"
+"POT-Creation-Date: 2018-05-02 11:10-0700\n"
+"PO-Revision-Date: 2018-05-08 09:23+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
-"Language-Team: Finnish <https://weblate.elementary.io/projects/desktop/"
-"greeter/fi/>\n"
+"Language-Team: Finnish <https://weblate.elementary.io/projects/wingpanel"
+"/wingpanel-indicator-network/fi/>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0.1\n"
-"X-Launchpad-Export-Date: 2017-03-09 05:44+0000\n"
+"X-Generator: Weblate 2.18\n"
+"X-Launchpad-Export-Date: 2016-11-29 05:01+0000\n"
 
-#: compositor/WindowManager.vala:431
-msgid "Does the display look OK?"
-msgstr "Näyttääkö kaikki kelvolliselta?"
+#: src/Indicator.vala:29
+msgid "Network"
+msgstr "Verkko"
 
-#: compositor/WindowManager.vala:434
-msgid "Keep This Configuration"
-msgstr "Säilytä asetukset"
+#: src/Indicator.vala:30
+msgid "Network indicator"
+msgstr "Verkkoilmaisin"
 
-#: compositor/WindowManager.vala:435
-msgid "Restore Previous Configuration"
-msgstr "Palauta aiemmat asetukset"
+#: src/common/Widgets/AbstractEtherInterface.vala:25
+#, c-format
+msgid "Virtual network: %s"
+msgstr "Virtuaaliverkko: %s"
 
-#: src/PasswordEntry.vala:24 src/PasswordEntry.vala:25
-msgid "Password"
-msgstr "Salasana"
+#: src/common/Widgets/AbstractEtherInterface.vala:28
+msgid "Wired"
+msgstr "Kiinteä"
 
-#: src/PasswordEntry.vala:28 src/Cards/UserCard.vala:60
-msgid "Log In"
-msgstr "Kirjaudu sisään"
+#: src/common/Widgets/AbstractModemInterface.vala:25
+#, c-format
+msgid "Mobile Broadband: %s"
+msgstr "Mobiililaajakaista: %s"
 
-#: src/MainWindow.vala:53
-msgid "Log in as Guest"
-msgstr "Kirjaudu vieraana"
+#: src/common/Widgets/AbstractModemInterface.vala:27
+msgid "Mobile Broadband"
+msgstr "Mobiililaajakaista"
 
-#: src/MainWindow.vala:55
-msgid "Manual Login…"
-msgstr "Manuaalinen kirjautuminen…"
+#: src/common/Widgets/AbstractModemInterface.vala:33
+msgid "Modem"
+msgstr "Modeemi"
 
-#: src/CapsLockRevealer.vala:27
-msgid "Caps Lock is on"
-msgstr "Caps Lock on päällä"
+#: src/common/Widgets/AbstractVpnInterface.vala:36
+#: src/common/Widgets/AbstractVpnInterface.vala:59
+msgid "VPN"
+msgstr "VPN"
 
-#: src/Cards/ManualCard.vala:15
-msgid "Manual Login"
-msgstr "Manuaalinen kirjautuminen"
+#: src/common/Widgets/AbstractWifiInterface.vala:49
+msgid "No Access Points Available"
+msgstr "Tukiasemia ei ole käytettävissä"
 
-#: src/Cards/ManualCard.vala:22
-msgid "Username"
-msgstr "Käyttäjätunnus"
+#: src/common/Widgets/AbstractWifiInterface.vala:63
+msgid "Scanning for Access Points…"
+msgstr "Etsitään tukiasemia…"
 
-#: src/Cards/ManualCard.vala:26
-msgid "Try username"
-msgstr ""
+#: src/common/Widgets/AbstractWifiInterface.vala:106
+msgid "Wireless"
+msgstr "Langaton"
 
-#~ msgid "Swipe your finger"
-#~ msgstr "Vedä sormesi"
+#: src/common/Widgets/VpnMenuItem.vala:53
+msgid "This Virtual Private Network could not be connected to."
+msgstr "Yhteys tähän VPN-verkkoon ei onnistu."
 
-#~ msgid "Place your finger"
-#~ msgstr "Aseta sormesi"
+#: src/common/Widgets/WidgetNMInterface.vala:22
+msgid "Unknown device"
+msgstr "Tuntematon laite"
 
-#~ msgid "Remove your finger and try again."
-#~ msgstr "Nosta sormesi pois ja yritä uudelleen."
+#: src/common/Widgets/WidgetNMInterface.vala:37
+#, c-format
+msgid "Unknown type: %s "
+msgstr "Tuntematon tyyppi: %s "
 
-#~ msgid "Center your finger and try again."
-#~ msgstr "Keskitä sormesi ja yritä uudelleen."
+#: src/common/Widgets/WifiMenuItem.vala:64
+msgid "This wireless network could not be connected to."
+msgstr "Yhteys tähän wifi-verkkoon ei onnistu."
 
-#~ msgid "An unknown error occured"
-#~ msgstr "Havaittiin tuntematon virhe"
+#: src/common/Widgets/WifiMenuItem.vala:130
+msgid "This network uses 40/64-bit WEP encryption"
+msgstr "Tämä verkko käyttää 40-/64-bittistä WEP-salausta"
 
-#~ msgid "Swipe your finger again"
-#~ msgstr "Vedä sormesi uudelleen"
+#: src/common/Widgets/WifiMenuItem.vala:133
+msgid "This network uses 104/128-bit WEP encryption"
+msgstr "Tämä verkko käyttää 104-/128-bittistä WEP-salausta"
 
-#~ msgid "Swipe was too short, try again"
-#~ msgstr "Veto oli liian lyhyt, yritä uudelleen"
+#: src/common/Widgets/WifiMenuItem.vala:136
+msgid "This network uses WPA encryption"
+msgstr "Tämä verkko käyttää WPA-salausta"
 
-#~ msgid "Your finger was not centered, try swiping your finger again"
-#~ msgstr "Sormesi ei ollut keskitettynä, vedä sormesi uudelleen"
+#: src/common/Widgets/WifiMenuItem.vala:139
+msgid "This network uses encryption"
+msgstr "Tämä verkko käyttää salausta"
 
-#~ msgid "Remove your finger, and try swiping your finger again"
-#~ msgstr "Nosta sormesi pois ja yritä vetää sormellasi uudelleen"
+#: src/common/Widgets/WifiMenuItem.vala:141
+msgid "This network is unsecured"
+msgstr "Tämä verkko on salaamaton"
 
-#~ msgid "Place your finger on the reader again"
-#~ msgstr "Aseta sormesi uudelleen lukijalle"
+#: src/Widgets/PopoverWidget.vala:60
+msgid "Connect to Hidden Network…"
+msgstr "Yhdistä piilotettuun verkkoon…"
 
-#~ msgid "Failed to match fingerprint"
-#~ msgstr "Sormenjäljen vastaaminen epäonnistui"
+#: src/Widgets/PopoverWidget.vala:64
+msgid "Network Settings…"
+msgstr "Verkkoasetukset…"
 
-#~ msgid "Verification timed out"
-#~ msgstr "Vahvistus aikakatkaistiin"
+#~ msgid "There are no wireless access points within range."
+#~ msgstr "Langattomia tukiasemia ei ole kantoalueella."
 
-#~ msgid "Guest session"
-#~ msgstr "Vierasistunto"
+#~ msgid "Wireless Is Disabled"
+#~ msgstr "Wifi on pois käytöstä"
 
-#~ msgid "%A, %B %e"
-#~ msgstr "%A, %e. %Bta"
+#~ msgid "Enable wireless to discover nearby wireless access points."
+#~ msgstr "Ota wifi käyttöön, jotta voit etsiä langattomia tukiasemia."
 
-#~ msgid "%l:%M"
-#~ msgstr "%R"
+#~ msgid "No VPN Available"
+#~ msgstr "VPN:ää ei ole saatavilla"
 
-#~ msgid " %p"
-#~ msgstr " %p"
+#~ msgid "Hotspot"
+#~ msgstr "Yhteyspiste"
 
-#~ msgid "Login"
-#~ msgstr "Kirjaudu sisään"
+#~ msgid "Hotspot %s"
+#~ msgstr "Yhteyspiste %s"
 
-#~ msgid "HighContrast"
-#~ msgstr "Korkea kontrasti"
+#~ msgid "Disconnected"
+#~ msgstr "Yhteys katkaistu"
 
-#~ msgid "Onscreen Keyboard"
-#~ msgstr "Virtuaalinäppäimistö"
+#~ msgid "Connected"
+#~ msgstr "Yhdistetty"
 
-#~ msgid "Restart"
-#~ msgstr "Käynnistä uudelleen"
+#~ msgid "Failed"
+#~ msgstr "Epäonnistui"
 
-#~ msgid "Shutdown"
-#~ msgstr "Sammuta"
+#~ msgid "Connecting"
+#~ msgstr "Yhdistetään"
 
-#~ msgid "Hibernate"
-#~ msgstr "Lepotila"
+#~ msgid "Cable unplugged"
+#~ msgstr "Johto on irti"
 
-#~ msgid "Suspend"
-#~ msgstr "Valmiustila"
+#~ msgid "Airplane mode enabled"
+#~ msgstr "Lentokonetila käytössä"
 
-#~ msgid "%A, %B %e%v"
-#~ msgstr "%A, %e. %Bta"
+#~ msgid "Unknown"
+#~ msgstr "Tuntematon"

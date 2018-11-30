@@ -1,34 +1,53 @@
 project(
-    'io.elementary.greeter',
+    'network',
     'vala', 'c',
-    version: '3.3.1',
-    meson_version: '>= 0.42.0'
+    version: '2.2.0'
 )
 
-gnome = import('gnome')
+gettext_name = meson.project_name() + '-indicator'
 i18n = import('i18n')
 
-ubuntu_patched_gsd = get_option('ubuntu-patched-gsd')
+add_global_arguments('-DGETTEXT_PACKAGE="@0@"'.format(gettext_name), language:'c')
 
-add_project_arguments(['--vapidir', join_paths(meson.current_source_dir(), 'vapi')], language: 'vala')
-
-if ubuntu_patched_gsd
-    add_project_arguments(['--define', 'UBUNTU_PATCHED_GSD'], language: 'vala')
-endif
-
-add_global_arguments('-DGETTEXT_PACKAGE="@0@"'.format(meson.project_name()), language:'c')
-
-greeter_resources = gnome.compile_resources(
-    'greeter-resources', 'data/greeter.gresource.xml',
-    source_dir: 'data'
+add_project_arguments(
+    '--vapidir', join_paths(meson.current_source_dir(), 'vapi'),
+    language: 'vala'
 )
 
-compositor_resources = gnome.compile_resources(
-    'compositor-resources', 'data/compositor.gresource.xml',
-    source_dir: 'data'
+wingpanel_dep = dependency('wingpanel-2.0')
+
+shared_module(
+    meson.project_name(),
+    'src/Indicator.vala',
+    'src/Utils.vala',
+    'src/common/rfkill.vala',
+    'src/common/Widgets/AbstractEtherInterface.vala',
+    'src/common/Widgets/AbstractModemInterface.vala',
+    'src/common/Widgets/AbstractVpnInterface.vala',
+    'src/common/Widgets/AbstractWifiInterface.vala',
+    'src/common/Widgets/NMVisualizer.vala',
+    'src/common/Widgets/VpnMenuItem.vala',
+    'src/common/Widgets/WidgetNMInterface.vala',
+    'src/common/Widgets/WifiMenuItem.vala',
+    'src/common/Widgets/EthernetMenuItem.vala',
+    'src/Widgets/DisplayWidget.vala',
+    'src/Widgets/EtherInterface.vala',
+    'src/Widgets/ModemInterface.vala',
+    'src/Widgets/VpnInterface.vala',
+    'src/Widgets/WifiInterface.vala',
+    'src/Widgets/PopoverWidget.vala',
+    dependencies: [
+        dependency('glib-2.0'),
+        dependency('gobject-2.0'),
+        dependency('granite'),
+        dependency('gtk+-3.0'),
+        dependency('libnm'),
+        dependency('libnma'),
+        meson.get_compiler('vala').find_library('posix'),
+        wingpanel_dep
+    ],
+    install: true,
+    install_dir : wingpanel_dep.get_pkgconfig_variable('indicatorsdir')
 )
 
-subdir('src')
-subdir('compositor')
-subdir('data')
 subdir('po')

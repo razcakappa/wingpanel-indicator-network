@@ -1,87 +1,111 @@
-# Bengali translation for pantheon-greeter
-# Copyright (c) 2013 Rosetta Contributors and Canonical Ltd 2013
-# This file is distributed under the same license as the pantheon-greeter package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2013.
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: pantheon-greeter\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-17 11:07+0100\n"
-"PO-Revision-Date: 2013-07-11 04:53+0000\n"
-"Last-Translator: Muntasim Ul Haque <tranjeeshan@tuta.io>\n"
-"Language-Team: Bengali <bn@li.org>\n"
+"POT-Creation-Date: 2018-05-02 11:10-0700\n"
+"PO-Revision-Date: 2017-12-28 00:18+0000\n"
+"Last-Translator: Subhadeep Jasu <subhajasu@gmail.com>\n"
+"Language-Team: Bengali <https://weblate.elementary.io/projects/wingpanel/"
+"wingpanel-indicator-network/bn/>\n"
 "Language: bn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2017-03-09 05:44+0000\n"
-"X-Generator: Launchpad (build 18330)\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.18\n"
+"X-Launchpad-Export-Date: 2016-11-29 05:01+0000\n"
 
-#: compositor/WindowManager.vala:431
-msgid "Does the display look OK?"
+#: src/Indicator.vala:29
+msgid "Network"
 msgstr ""
 
-#: compositor/WindowManager.vala:434
-msgid "Keep This Configuration"
+#: src/Indicator.vala:30
+msgid "Network indicator"
 msgstr ""
 
-#: compositor/WindowManager.vala:435
-msgid "Restore Previous Configuration"
+#: src/common/Widgets/AbstractEtherInterface.vala:25
+#, c-format
+msgid "Virtual network: %s"
 msgstr ""
 
-#: src/PasswordEntry.vala:24 src/PasswordEntry.vala:25
-msgid "Password"
+#: src/common/Widgets/AbstractEtherInterface.vala:28
+msgid "Wired"
 msgstr ""
 
-#: src/PasswordEntry.vala:28 src/Cards/UserCard.vala:60
-msgid "Log In"
+#: src/common/Widgets/AbstractModemInterface.vala:25
+#, c-format
+msgid "Mobile Broadband: %s"
 msgstr ""
 
-#: src/MainWindow.vala:53
-msgid "Log in as Guest"
+#: src/common/Widgets/AbstractModemInterface.vala:27
+msgid "Mobile Broadband"
 msgstr ""
 
-#: src/MainWindow.vala:55
-msgid "Manual Login…"
+#: src/common/Widgets/AbstractModemInterface.vala:33
+msgid "Modem"
 msgstr ""
 
-#: src/CapsLockRevealer.vala:27
-msgid "Caps Lock is on"
+#: src/common/Widgets/AbstractVpnInterface.vala:36
+#: src/common/Widgets/AbstractVpnInterface.vala:59
+msgid "VPN"
 msgstr ""
 
-#: src/Cards/ManualCard.vala:15
-msgid "Manual Login"
+#: src/common/Widgets/AbstractWifiInterface.vala:49
+msgid "No Access Points Available"
 msgstr ""
 
-#: src/Cards/ManualCard.vala:22
-msgid "Username"
+#: src/common/Widgets/AbstractWifiInterface.vala:63
+msgid "Scanning for Access Points…"
 msgstr ""
 
-#: src/Cards/ManualCard.vala:26
-msgid "Try username"
+#: src/common/Widgets/AbstractWifiInterface.vala:106
+msgid "Wireless"
 msgstr ""
 
-#~ msgid "Guest session"
-#~ msgstr "অতিথি সেশন"
+#: src/common/Widgets/VpnMenuItem.vala:53
+msgid "This Virtual Private Network could not be connected to."
+msgstr ""
 
-#~ msgid "HighContrast"
-#~ msgstr "হাই-কনট্রাস্ট"
+#: src/common/Widgets/WidgetNMInterface.vala:22
+msgid "Unknown device"
+msgstr ""
 
-#~ msgid "Onscreen Keyboard"
-#~ msgstr "স্ক্রিনে দেখানো কিবোর্ড"
+#: src/common/Widgets/WidgetNMInterface.vala:37
+#, c-format
+msgid "Unknown type: %s "
+msgstr ""
 
-#~ msgid "Hibernate"
-#~ msgstr "হাইবারনেট"
+#: src/common/Widgets/WifiMenuItem.vala:64
+msgid "This wireless network could not be connected to."
+msgstr ""
 
-#~ msgid "Restart"
-#~ msgstr "পুনরায় চালু করুন"
+#: src/common/Widgets/WifiMenuItem.vala:130
+msgid "This network uses 40/64-bit WEP encryption"
+msgstr ""
 
-#~ msgid "Suspend"
-#~ msgstr "স্থগিত"
+#: src/common/Widgets/WifiMenuItem.vala:133
+msgid "This network uses 104/128-bit WEP encryption"
+msgstr ""
 
-#~ msgid "Shutdown"
-#~ msgstr "বন্ধ"
+#: src/common/Widgets/WifiMenuItem.vala:136
+msgid "This network uses WPA encryption"
+msgstr ""
 
-#~ msgid "Login"
-#~ msgstr "লগ-ইন"
+#: src/common/Widgets/WifiMenuItem.vala:139
+msgid "This network uses encryption"
+msgstr ""
+
+#: src/common/Widgets/WifiMenuItem.vala:141
+msgid "This network is unsecured"
+msgstr ""
+
+#: src/Widgets/PopoverWidget.vala:60
+msgid "Connect to Hidden Network…"
+msgstr ""
+
+#: src/Widgets/PopoverWidget.vala:64
+msgid "Network Settings…"
+msgstr ""
+
+#~ msgid "Connected"
+#~ msgstr "সংযুক্ত"

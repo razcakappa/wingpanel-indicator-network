@@ -1,138 +1,111 @@
-# Hungarian translation for pantheon-greeter
-# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
-# This file is distributed under the same license as the pantheon-greeter package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: pantheon-greeter\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-17 11:07+0100\n"
-"PO-Revision-Date: 2018-06-15 00:10+0000\n"
+"POT-Creation-Date: 2018-05-02 11:10-0700\n"
+"PO-Revision-Date: 2018-05-29 00:15+0000\n"
 "Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
-"Language-Team: Hungarian <https://weblate.elementary.io/projects/desktop/"
-"greeter/hu/>\n"
+"Language-Team: Hungarian <https://weblate.elementary.io/projects/wingpanel"
+"/wingpanel-indicator-network/hu/>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.18\n"
-"X-Launchpad-Export-Date: 2017-03-09 05:44+0000\n"
+"X-Launchpad-Export-Date: 2016-11-29 05:01+0000\n"
 
-#: compositor/WindowManager.vala:431
-msgid "Does the display look OK?"
-msgstr ""
+#: src/Indicator.vala:29
+msgid "Network"
+msgstr "Hálózat"
 
-#: compositor/WindowManager.vala:434
-msgid "Keep This Configuration"
-msgstr ""
+#: src/Indicator.vala:30
+msgid "Network indicator"
+msgstr "Hálózat indikátor"
 
-#: compositor/WindowManager.vala:435
-msgid "Restore Previous Configuration"
-msgstr ""
+#: src/common/Widgets/AbstractEtherInterface.vala:25
+#, c-format
+msgid "Virtual network: %s"
+msgstr "Virtuális hálózat: %s"
 
-#: src/PasswordEntry.vala:24 src/PasswordEntry.vala:25
-msgid "Password"
-msgstr ""
+#: src/common/Widgets/AbstractEtherInterface.vala:28
+msgid "Wired"
+msgstr "Vezetékes"
 
-#: src/PasswordEntry.vala:28 src/Cards/UserCard.vala:60
-msgid "Log In"
-msgstr "Bejelentkezés"
+#: src/common/Widgets/AbstractModemInterface.vala:25
+#, c-format
+msgid "Mobile Broadband: %s"
+msgstr "Mobil szélessáv: %s"
 
-#: src/MainWindow.vala:53
-msgid "Log in as Guest"
-msgstr ""
+#: src/common/Widgets/AbstractModemInterface.vala:27
+msgid "Mobile Broadband"
+msgstr "Mobil szélessáv"
 
-#: src/MainWindow.vala:55
-#, fuzzy
-msgid "Manual Login…"
-msgstr "Kézi bejelentkezés"
+#: src/common/Widgets/AbstractModemInterface.vala:33
+msgid "Modem"
+msgstr "Modem"
 
-#: src/CapsLockRevealer.vala:27
-msgid "Caps Lock is on"
-msgstr ""
+#: src/common/Widgets/AbstractVpnInterface.vala:36
+#: src/common/Widgets/AbstractVpnInterface.vala:59
+msgid "VPN"
+msgstr "VPN"
 
-#: src/Cards/ManualCard.vala:15
-msgid "Manual Login"
-msgstr "Kézi bejelentkezés"
+#: src/common/Widgets/AbstractWifiInterface.vala:49
+msgid "No Access Points Available"
+msgstr "Nincs elérhető hozzáférési pont"
 
-#: src/Cards/ManualCard.vala:22
-msgid "Username"
-msgstr ""
+#: src/common/Widgets/AbstractWifiInterface.vala:63
+msgid "Scanning for Access Points…"
+msgstr "Hozzáférési pontok keresése…"
 
-#: src/Cards/ManualCard.vala:26
-msgid "Try username"
-msgstr ""
+#: src/common/Widgets/AbstractWifiInterface.vala:106
+msgid "Wireless"
+msgstr "Vezeték nélküli"
 
-#~ msgid "Swipe your finger"
-#~ msgstr "Csúsztassa az ujját"
+#: src/common/Widgets/VpnMenuItem.vala:53
+msgid "This Virtual Private Network could not be connected to."
+msgstr "Nem lehet csatlakozni a virtuális magánhálózathoz."
 
-#~ msgid "Place your finger"
-#~ msgstr "Helyezze rá az ujját"
+#: src/common/Widgets/WidgetNMInterface.vala:22
+msgid "Unknown device"
+msgstr "Ismeretlen eszköz"
 
-#~ msgid "Remove your finger and try again."
-#~ msgstr "Vegye le a ujját és próbálja újra."
+#: src/common/Widgets/WidgetNMInterface.vala:37
+#, c-format
+msgid "Unknown type: %s "
+msgstr "Ismeretlen típus: %s "
 
-#~ msgid "Center your finger and try again."
-#~ msgstr "Helyezze középre az ujját és próbálja újra."
+#: src/common/Widgets/WifiMenuItem.vala:64
+msgid "This wireless network could not be connected to."
+msgstr "Nem sikerült csatlakozni a vezeték nélküli hálózathoz."
 
-#~ msgid "An unknown error occured"
-#~ msgstr "Ismeretlen hiba történt"
+#: src/common/Widgets/WifiMenuItem.vala:130
+msgid "This network uses 40/64-bit WEP encryption"
+msgstr "Ez a hálózat 40/64-bites WEP titkosítást használ"
 
-#~ msgid "Swipe your finger again"
-#~ msgstr "Csúsztassa az ujját mégegyszer"
+#: src/common/Widgets/WifiMenuItem.vala:133
+msgid "This network uses 104/128-bit WEP encryption"
+msgstr "Ez a hálózat 104/128-bites WEP titkosítást használ"
 
-#~ msgid "Swipe was too short, try again"
-#~ msgstr "A csúsztatás túl rövid volt, próbálja újra"
+#: src/common/Widgets/WifiMenuItem.vala:136
+msgid "This network uses WPA encryption"
+msgstr "Ez a hálózat WPA titkosítást használ"
 
-#~ msgid "Your finger was not centered, try swiping your finger again"
-#~ msgstr "Az ujja nem volt középen, próbálja csúsztatni mégegyszer"
+#: src/common/Widgets/WifiMenuItem.vala:139
+msgid "This network uses encryption"
+msgstr "Ez a hálózat titkosítást használ"
 
-#~ msgid "Remove your finger, and try swiping your finger again"
-#~ msgstr "Vegye el az ujját, és próbálja csúsztatni mégegyszer"
+#: src/common/Widgets/WifiMenuItem.vala:141
+msgid "This network is unsecured"
+msgstr "Ez a hálózat nem biztonságos"
 
-#~ msgid "Place your finger on the reader again"
-#~ msgstr "Helyezze az ujját megint az olvasóra"
+#: src/Widgets/PopoverWidget.vala:60
+msgid "Connect to Hidden Network…"
+msgstr "Csatlakozás a rejtett hálózathoz…"
 
-#~ msgid "Failed to match fingerprint"
-#~ msgstr "Nem egyeznek az ujjlenyomatok"
+#: src/Widgets/PopoverWidget.vala:64
+msgid "Network Settings…"
+msgstr "Hálózati beállítások…"
 
-#~ msgid "Verification timed out"
-#~ msgstr "Az ellenőrzés ideje lejárt"
-
-#~ msgid "Guest session"
-#~ msgstr "Vendég-munkamenet"
-
-#~ msgid "%A, %B %e"
-#~ msgstr "%B %e. %A"
-
-#~ msgid "%l:%M"
-#~ msgstr "%l:%M"
-
-#~ msgid " %p"
-#~ msgstr " %p"
-
-#~ msgid "Login"
-#~ msgstr "Bejelentkezés"
-
-#~ msgid "HighContrast"
-#~ msgstr "Nagy kontraszt"
-
-#~ msgid "Hibernate"
-#~ msgstr "Hibernálás"
-
-#~ msgid "Restart"
-#~ msgstr "Újraindítás"
-
-#~ msgid "Suspend"
-#~ msgstr "Felfüggesztés"
-
-#~ msgid "Shutdown"
-#~ msgstr "Leállítás"
-
-#~ msgid "Onscreen Keyboard"
-#~ msgstr "Képernyő-billentyűzet"
-
-#~ msgid "%A, %B %e%v"
-#~ msgstr "%B %e., %A"
+#~ msgid "Connected"
+#~ msgstr "Kapcsolatban"

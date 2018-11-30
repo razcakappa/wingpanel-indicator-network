@@ -1,139 +1,152 @@
-# Chinese (Simplified) translation for pantheon-greeter
-# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
-# This file is distributed under the same license as the pantheon-greeter package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: pantheon-greeter\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-17 11:07+0100\n"
-"PO-Revision-Date: 2018-11-28 14:14+0000\n"
+"POT-Creation-Date: 2018-05-02 11:10-0700\n"
+"PO-Revision-Date: 2017-07-03 00:59+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
-"Language-Team: Chinese (Simplified) <https://weblate.elementary.io/projects/"
-"desktop/greeter/zh_Hans/>\n"
+"Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
+"wingpanel/wingpanel-indicator-network/zh_CN/>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.0.1\n"
-"X-Launchpad-Export-Date: 2017-03-14 06:58+0000\n"
+"X-Generator: Weblate 2.14\n"
+"X-Launchpad-Export-Date: 2016-11-29 05:01+0000\n"
 
-#: compositor/WindowManager.vala:431
-msgid "Does the display look OK?"
-msgstr "显示看起来正常吗？"
+#: src/Indicator.vala:29
+msgid "Network"
+msgstr "网络"
 
-#: compositor/WindowManager.vala:434
-msgid "Keep This Configuration"
-msgstr "保持当前配置"
+#: src/Indicator.vala:30
+msgid "Network indicator"
+msgstr "网络指示器"
 
-#: compositor/WindowManager.vala:435
-msgid "Restore Previous Configuration"
-msgstr "恢复上次配置"
+#: src/common/Widgets/AbstractEtherInterface.vala:25
+#, c-format
+msgid "Virtual network: %s"
+msgstr "虚拟网络： %s"
 
-#: src/PasswordEntry.vala:24 src/PasswordEntry.vala:25
-msgid "Password"
-msgstr "密码"
+#: src/common/Widgets/AbstractEtherInterface.vala:28
+msgid "Wired"
+msgstr "以太网络"
 
-#: src/PasswordEntry.vala:28 src/Cards/UserCard.vala:60
-msgid "Log In"
-msgstr "登录"
+#: src/common/Widgets/AbstractModemInterface.vala:25
+#, c-format
+msgid "Mobile Broadband: %s"
+msgstr ""
 
-#: src/MainWindow.vala:53
-msgid "Log in as Guest"
-msgstr "以访客身份登入"
+#: src/common/Widgets/AbstractModemInterface.vala:27
+msgid "Mobile Broadband"
+msgstr ""
 
-#: src/MainWindow.vala:55
-msgid "Manual Login…"
-msgstr "手动登录…"
+#: src/common/Widgets/AbstractModemInterface.vala:33
+msgid "Modem"
+msgstr ""
 
-#: src/CapsLockRevealer.vala:27
-msgid "Caps Lock is on"
-msgstr "大写锁定已打开"
+#: src/common/Widgets/AbstractVpnInterface.vala:36
+#: src/common/Widgets/AbstractVpnInterface.vala:59
+msgid "VPN"
+msgstr "VPN"
 
-#: src/Cards/ManualCard.vala:15
-msgid "Manual Login"
-msgstr "手动登录"
+#: src/common/Widgets/AbstractWifiInterface.vala:49
+msgid "No Access Points Available"
+msgstr "无可用接入点"
 
-#: src/Cards/ManualCard.vala:22
-msgid "Username"
-msgstr "用户名"
+#: src/common/Widgets/AbstractWifiInterface.vala:63
+msgid "Scanning for Access Points…"
+msgstr "正在扫描接入点…"
 
-#: src/Cards/ManualCard.vala:26
-msgid "Try username"
-msgstr "试试 username"
+#: src/common/Widgets/AbstractWifiInterface.vala:106
+msgid "Wireless"
+msgstr "无线网络"
 
-#~ msgid "Swipe your finger"
-#~ msgstr "滑动手指"
+#: src/common/Widgets/VpnMenuItem.vala:53
+msgid "This Virtual Private Network could not be connected to."
+msgstr "无法连接到此 VPN。"
 
-#~ msgid "Place your finger"
-#~ msgstr "放置手指"
+#: src/common/Widgets/WidgetNMInterface.vala:22
+msgid "Unknown device"
+msgstr "未知设备"
 
-#~ msgid "Remove your finger and try again."
-#~ msgstr "移开您的手指并重试"
+#: src/common/Widgets/WidgetNMInterface.vala:37
+#, c-format
+msgid "Unknown type: %s "
+msgstr "未知类型： %s "
 
-#~ msgid "Center your finger and try again."
-#~ msgstr "居中放置手指并重试"
+#: src/common/Widgets/WifiMenuItem.vala:64
+msgid "This wireless network could not be connected to."
+msgstr "无法连接到此无线网络。"
 
-#~ msgid "An unknown error occured"
-#~ msgstr "出现未知错误"
-
-#~ msgid "Swipe your finger again"
-#~ msgstr "重新滑动手指"
-
-#~ msgid "Swipe was too short, try again"
-#~ msgstr "滑动距离太短，请重试"
-
-#~ msgid "Your finger was not centered, try swiping your finger again"
-#~ msgstr "手指未居中，请重新滑动"
-
+#: src/common/Widgets/WifiMenuItem.vala:130
 #, fuzzy
-#~ msgid "Remove your finger, and try swiping your finger again"
-#~ msgstr "移开您的手指并重试"
+msgid "This network uses 40/64-bit WEP encryption"
+msgstr "此网络使用 40/64-bit WEP 加密方式。"
 
+#: src/common/Widgets/WifiMenuItem.vala:133
 #, fuzzy
-#~ msgid "Place your finger on the reader again"
-#~ msgstr "移开您的手指并重试"
+msgid "This network uses 104/128-bit WEP encryption"
+msgstr "此网络使用 104/128-bit WEP 加密方式。"
 
-#~ msgid "Failed to match fingerprint"
-#~ msgstr "指纹匹配失败"
+#: src/common/Widgets/WifiMenuItem.vala:136
+#, fuzzy
+msgid "This network uses WPA encryption"
+msgstr "此网络使用 WPA 加密方式。"
 
-#~ msgid "Verification timed out"
-#~ msgstr "认证超时"
+#: src/common/Widgets/WifiMenuItem.vala:139
+#, fuzzy
+msgid "This network uses encryption"
+msgstr "此网络已加密。"
 
-#~ msgid "Guest session"
-#~ msgstr "访客会话"
+#: src/common/Widgets/WifiMenuItem.vala:141
+#, fuzzy
+msgid "This network is unsecured"
+msgstr "此网络已加密。"
 
-#~ msgid "%A, %B %e"
-#~ msgstr "%b%e日 %A"
+#: src/Widgets/PopoverWidget.vala:60
+msgid "Connect to Hidden Network…"
+msgstr "连接隐藏网络…"
 
-#~ msgid "%l:%M"
-#~ msgstr "%l:%M"
+#: src/Widgets/PopoverWidget.vala:64
+msgid "Network Settings…"
+msgstr "网络设置…"
 
-#~ msgid " %p"
-#~ msgstr " %p"
+#~ msgid "There are no wireless access points within range."
+#~ msgstr "所在范围内没有无线接入点。"
 
-#~ msgid "HighContrast"
-#~ msgstr "高对比度"
+#~ msgid "Wireless Is Disabled"
+#~ msgstr "无线网络已禁用"
 
-#~ msgid "Onscreen Keyboard"
-#~ msgstr "屏幕键盘"
+#~ msgid "Enable wireless to discover nearby wireless access points."
+#~ msgstr "启用无线网络来发现附近的无线接入点。"
 
-#~ msgid "Hibernate"
-#~ msgstr "休眠"
+#~ msgid "No VPN Available"
+#~ msgstr "无可用VPN"
 
-#~ msgid "Restart"
-#~ msgstr "重启"
+#~ msgid "Hotspot"
+#~ msgstr "热点"
 
-#~ msgid "Suspend"
-#~ msgstr "待机"
+#~ msgid "Hotspot %s"
+#~ msgstr "热点 %s"
 
-#~ msgid "Shutdown"
-#~ msgstr "关机"
+#~ msgid "Disconnected"
+#~ msgstr "已断开"
 
-#~ msgid "Login"
-#~ msgstr "登录"
+#~ msgid "Connected"
+#~ msgstr "已连接"
 
-#~ msgid "%A, %B %e%v"
-#~ msgstr "%b%e日，%A"
+#~ msgid "Failed"
+#~ msgstr "失败的"
+
+#~ msgid "Connecting"
+#~ msgstr "连接中"
+
+#~ msgid "Cable unplugged"
+#~ msgstr "线缆已拔出"
+
+#~ msgid "Airplane mode enabled"
+#~ msgstr "飞行模式已启用"
+
+#~ msgid "Unknown"
+#~ msgstr "未知"

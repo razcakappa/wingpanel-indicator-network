@@ -1,126 +1,149 @@
-# Bulgarian translation for pantheon-greeter
-# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
-# This file is distributed under the same license as the pantheon-greeter package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: pantheon-greeter\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-17 11:07+0100\n"
-"PO-Revision-Date: 2017-05-09 22:12+0000\n"
-"Last-Translator: Martin Tomov <martin.tomov@boomer.digital>\n"
-"Language-Team: Bulgarian <https://l10n.elementary.io/projects/desktop/"
-"greeter/bg/>\n"
-"Language: bg\n"
+"POT-Creation-Date: 2018-05-02 11:10-0700\n"
+"PO-Revision-Date: 2016-08-11 12:58+0000\n"
+"Last-Translator: Stanislav <stunito0o0o0@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.13-dev\n"
-"X-Launchpad-Export-Date: 2017-03-09 05:44+0000\n"
+"X-Launchpad-Export-Date: 2016-11-29 05:01+0000\n"
+"X-Generator: Launchpad (build 18282)\n"
 
-#: compositor/WindowManager.vala:431
-msgid "Does the display look OK?"
+#: src/Indicator.vala:29
+msgid "Network"
+msgstr "Мрежа"
+
+#: src/Indicator.vala:30
+msgid "Network indicator"
+msgstr "Показател за мрежата"
+
+#: src/common/Widgets/AbstractEtherInterface.vala:25
+#, c-format
+msgid "Virtual network: %s"
+msgstr "Виртуална мрежа: %s"
+
+#: src/common/Widgets/AbstractEtherInterface.vala:28
+msgid "Wired"
+msgstr "Жична"
+
+#: src/common/Widgets/AbstractModemInterface.vala:25
+#, c-format
+msgid "Mobile Broadband: %s"
 msgstr ""
 
-#: compositor/WindowManager.vala:434
-msgid "Keep This Configuration"
+#: src/common/Widgets/AbstractModemInterface.vala:27
+msgid "Mobile Broadband"
 msgstr ""
 
-#: compositor/WindowManager.vala:435
-msgid "Restore Previous Configuration"
+#: src/common/Widgets/AbstractModemInterface.vala:33
+msgid "Modem"
 msgstr ""
 
-#: src/PasswordEntry.vala:24 src/PasswordEntry.vala:25
-msgid "Password"
+#: src/common/Widgets/AbstractVpnInterface.vala:36
+#: src/common/Widgets/AbstractVpnInterface.vala:59
+msgid "VPN"
 msgstr ""
 
-#: src/PasswordEntry.vala:28 src/Cards/UserCard.vala:60
-msgid "Log In"
-msgstr "Влизане"
+#: src/common/Widgets/AbstractWifiInterface.vala:49
+msgid "No Access Points Available"
+msgstr "Няма налична точка за достъп"
 
-#: src/MainWindow.vala:53
-msgid "Log in as Guest"
-msgstr ""
+#: src/common/Widgets/AbstractWifiInterface.vala:63
+msgid "Scanning for Access Points…"
+msgstr "Търсене на точки за достъп"
 
-#: src/MainWindow.vala:55
+#: src/common/Widgets/AbstractWifiInterface.vala:106
+msgid "Wireless"
+msgstr "Безжична мрежа"
+
+#: src/common/Widgets/VpnMenuItem.vala:53
 #, fuzzy
-msgid "Manual Login…"
-msgstr "Ръчен вход"
+msgid "This Virtual Private Network could not be connected to."
+msgstr "Свързването към тази безжична мрежа бе неуспешно."
 
-#: src/CapsLockRevealer.vala:27
-msgid "Caps Lock is on"
-msgstr ""
+#: src/common/Widgets/WidgetNMInterface.vala:22
+msgid "Unknown device"
+msgstr "Неизвестно устройство"
 
-#: src/Cards/ManualCard.vala:15
-msgid "Manual Login"
-msgstr "Ръчен вход"
+#: src/common/Widgets/WidgetNMInterface.vala:37
+#, c-format
+msgid "Unknown type: %s "
+msgstr "Неизвестен тип:  %s "
 
-#: src/Cards/ManualCard.vala:22
-msgid "Username"
-msgstr ""
+#: src/common/Widgets/WifiMenuItem.vala:64
+msgid "This wireless network could not be connected to."
+msgstr "Свързването към тази безжична мрежа бе неуспешно."
 
-#: src/Cards/ManualCard.vala:26
-msgid "Try username"
-msgstr ""
+#: src/common/Widgets/WifiMenuItem.vala:130
+#, fuzzy
+msgid "This network uses 40/64-bit WEP encryption"
+msgstr "Тази мрежа използва 40/64-битово WEP криптиране."
 
-#~ msgid "Swipe your finger"
-#~ msgstr "Плъзни пръста"
+#: src/common/Widgets/WifiMenuItem.vala:133
+#, fuzzy
+msgid "This network uses 104/128-bit WEP encryption"
+msgstr "Тази мрежа използва 104/128-битово WEP криптиране."
 
-#~ msgid "Place your finger"
-#~ msgstr "Поставете пръста си"
+#: src/common/Widgets/WifiMenuItem.vala:136
+#, fuzzy
+msgid "This network uses WPA encryption"
+msgstr "Тази мрежа използва WPA криптиране."
 
-#~ msgid "Remove your finger and try again."
-#~ msgstr "Вдигнете пръста си и опитайте отново."
+#: src/common/Widgets/WifiMenuItem.vala:139
+#, fuzzy
+msgid "This network uses encryption"
+msgstr "Мрежата е шифрована."
 
-#~ msgid "Center your finger and try again."
-#~ msgstr "Поставете пръста си в центъра и опитайте отново."
+#: src/common/Widgets/WifiMenuItem.vala:141
+#, fuzzy
+msgid "This network is unsecured"
+msgstr "Мрежата е шифрована."
+
+#: src/Widgets/PopoverWidget.vala:60
+msgid "Connect to Hidden Network…"
+msgstr "Свързване към скрита мрежа"
+
+#: src/Widgets/PopoverWidget.vala:64
+msgid "Network Settings…"
+msgstr "Настройки на мрежата"
+
+#~ msgid "There are no wireless access points within range."
+#~ msgstr "В обхвата няма безжични точки за достъп"
+
+#~ msgid "Wireless Is Disabled"
+#~ msgstr "Безжичната мрежа е изключена"
+
+#~ msgid "Enable wireless to discover nearby wireless access points."
+#~ msgstr "Включете безжичната мрежа, за да откриете точки за достъп наблизо"
 
 #, fuzzy
-#~ msgid "Swipe your finger again"
-#~ msgstr "Плъзни пръста"
+#~ msgid "No VPN Available"
+#~ msgstr "Няма налична точка за достъп"
 
-#, fuzzy
-#~ msgid "Remove your finger, and try swiping your finger again"
-#~ msgstr "Вдигнете пръста си и опитайте отново."
+#~ msgid "Hotspot"
+#~ msgstr "Точка за достъп"
 
-#, fuzzy
-#~ msgid "Place your finger on the reader again"
-#~ msgstr "Вдигнете пръста си и опитайте отново."
+#~ msgid "Hotspot %s"
+#~ msgstr "Точка за достъп %s"
 
-#~ msgid "Guest session"
-#~ msgstr "Сесия на гост"
+#~ msgid "Disconnected"
+#~ msgstr "Няма връзка"
 
-#~ msgid "%A, %B %e"
-#~ msgstr "%A, %e %B"
+#~ msgid "Connected"
+#~ msgstr "Свързано"
 
-#~ msgid "%l:%M"
-#~ msgstr "%H:%M"
+#~ msgid "Failed"
+#~ msgstr "Неуспешно"
 
-#~ msgid " %p"
-#~ msgstr " %p"
+#~ msgid "Connecting"
+#~ msgstr "Свързване"
 
-#~ msgid "Login"
-#~ msgstr "Вход"
+#~ msgid "Cable unplugged"
+#~ msgstr "Кабелът е изваден"
 
-#~ msgid "Restart"
-#~ msgstr "Рестартиране"
-
-#~ msgid "HighContrast"
-#~ msgstr "Висок контраст"
-
-#~ msgid "Onscreen Keyboard"
-#~ msgstr "Екранна клавиатура"
-
-#~ msgid "Hibernate"
-#~ msgstr "Дълбоко приспиване"
-
-#~ msgid "Suspend"
-#~ msgstr "Приспиване"
-
-#~ msgid "Shutdown"
-#~ msgstr "Изключване"
-
-#~ msgid "%A, %B %e%v"
-#~ msgstr "%A, %B %e"
+#~ msgid "Unknown"
+#~ msgstr "Непознато"

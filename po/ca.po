@@ -1,137 +1,147 @@
-# Catalan translation for pantheon-greeter
-# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
-# This file is distributed under the same license as the pantheon-greeter package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: pantheon-greeter\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-17 11:07+0100\n"
-"PO-Revision-Date: 2018-11-19 17:15+0000\n"
+"POT-Creation-Date: 2018-05-02 11:10-0700\n"
+"PO-Revision-Date: 2018-05-08 00:13+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
-"Language-Team: Catalan <https://weblate.elementary.io/projects/desktop/"
-"greeter/ca/>\n"
+"Language-Team: Catalan <https://weblate.elementary.io/projects/wingpanel"
+"/wingpanel-indicator-network/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0.1\n"
-"X-Launchpad-Export-Date: 2017-03-09 05:44+0000\n"
+"X-Generator: Weblate 2.18\n"
+"X-Launchpad-Export-Date: 2016-12-20 05:12+0000\n"
 
-#: compositor/WindowManager.vala:431
-msgid "Does the display look OK?"
-msgstr "La pantalla es veu bé?"
+#: src/Indicator.vala:29
+msgid "Network"
+msgstr "Xarxa"
 
-#: compositor/WindowManager.vala:434
-msgid "Keep This Configuration"
-msgstr "Mantén aquesta configuració"
+#: src/Indicator.vala:30
+msgid "Network indicator"
+msgstr "Indicador de xarxa"
 
-#: compositor/WindowManager.vala:435
-msgid "Restore Previous Configuration"
-msgstr "Restaura la configuració anterior"
+#: src/common/Widgets/AbstractEtherInterface.vala:25
+#, c-format
+msgid "Virtual network: %s"
+msgstr "Xarxa virtual: %s"
 
-#: src/PasswordEntry.vala:24 src/PasswordEntry.vala:25
-msgid "Password"
-msgstr "Contrasenya"
+#: src/common/Widgets/AbstractEtherInterface.vala:28
+msgid "Wired"
+msgstr "Amb fil"
 
-#: src/PasswordEntry.vala:28 src/Cards/UserCard.vala:60
-msgid "Log In"
-msgstr "Inicia la sessió"
+#: src/common/Widgets/AbstractModemInterface.vala:25
+#, c-format
+msgid "Mobile Broadband: %s"
+msgstr "Banda ampla mòbil: %s"
 
-#: src/MainWindow.vala:53
-msgid "Log in as Guest"
-msgstr "Entra com a convidat"
+#: src/common/Widgets/AbstractModemInterface.vala:27
+msgid "Mobile Broadband"
+msgstr "Banda ampla mòbil"
 
-#: src/MainWindow.vala:55
-msgid "Manual Login…"
-msgstr "Inici de sessió manual…"
+#: src/common/Widgets/AbstractModemInterface.vala:33
+msgid "Modem"
+msgstr "Mòdem"
 
-#: src/CapsLockRevealer.vala:27
-msgid "Caps Lock is on"
-msgstr "El bloqueig de les majúscules està activat."
+#: src/common/Widgets/AbstractVpnInterface.vala:36
+#: src/common/Widgets/AbstractVpnInterface.vala:59
+msgid "VPN"
+msgstr "VPN"
 
-#: src/Cards/ManualCard.vala:15
-msgid "Manual Login"
-msgstr "Inici de sessió manual"
+#: src/common/Widgets/AbstractWifiInterface.vala:49
+msgid "No Access Points Available"
+msgstr "No hi ha punts d'accés disponibles"
 
-#: src/Cards/ManualCard.vala:22
-msgid "Username"
-msgstr "Nom d'usuari"
+#: src/common/Widgets/AbstractWifiInterface.vala:63
+msgid "Scanning for Access Points…"
+msgstr "S'explora si hi ha punts d'accés…"
 
-#: src/Cards/ManualCard.vala:26
-msgid "Try username"
-msgstr "Proveu el nom d'usuari"
+#: src/common/Widgets/AbstractWifiInterface.vala:106
+msgid "Wireless"
+msgstr "Sense fil"
 
-#~ msgid "Swipe your finger"
-#~ msgstr "Feu lliscar el dit."
+#: src/common/Widgets/VpnMenuItem.vala:53
+msgid "This Virtual Private Network could not be connected to."
+msgstr "No s'ha pogut connectar amb aquesta xarxa privada virtual."
 
-#~ msgid "Place your finger"
-#~ msgstr "Poseu-hi el dit."
+#: src/common/Widgets/WidgetNMInterface.vala:22
+msgid "Unknown device"
+msgstr "Dispositiu desconegut"
 
-#~ msgid "Remove your finger and try again."
-#~ msgstr "Traieu-ne el dit i torneu-ho a provar."
+#: src/common/Widgets/WidgetNMInterface.vala:37
+#, c-format
+msgid "Unknown type: %s "
+msgstr "Tipus desconegut: %s "
 
-#~ msgid "Center your finger and try again."
-#~ msgstr "Poseu el dit al centre i torneu-ho a provar."
+#: src/common/Widgets/WifiMenuItem.vala:64
+msgid "This wireless network could not be connected to."
+msgstr "No s'ha pogut connectar amb aquesta xarxa sense fil."
 
-#~ msgid "An unknown error occured"
-#~ msgstr "Hi ha hagut un error desconegut."
+#: src/common/Widgets/WifiMenuItem.vala:130
+msgid "This network uses 40/64-bit WEP encryption"
+msgstr "Aquesta xarxa usa encriptació WEP de 40 / 64 bits."
 
-#~ msgid "Swipe your finger again"
-#~ msgstr "Feu lliscar el dit un altre cop."
+#: src/common/Widgets/WifiMenuItem.vala:133
+msgid "This network uses 104/128-bit WEP encryption"
+msgstr "Aquesta xarxa usa encriptació WEP de 104 / 128 bits."
 
-#~ msgid "Swipe was too short, try again"
-#~ msgstr "El lliscament és massa curt. Torneu-hi."
+#: src/common/Widgets/WifiMenuItem.vala:136
+msgid "This network uses WPA encryption"
+msgstr "Aquesta xarxa usa encriptació WPA."
 
-#~ msgid "Your finger was not centered, try swiping your finger again"
-#~ msgstr "El dit no estava centrat. Torneu-hi."
+#: src/common/Widgets/WifiMenuItem.vala:139
+msgid "This network uses encryption"
+msgstr "Aquesta xarxa usa encriptació."
 
-#~ msgid "Remove your finger, and try swiping your finger again"
-#~ msgstr "Traieu-ne el dit i torneu-lo a fer lliscar."
+#: src/common/Widgets/WifiMenuItem.vala:141
+msgid "This network is unsecured"
+msgstr "Aquesta xarxa no té seguretat."
 
-#~ msgid "Place your finger on the reader again"
-#~ msgstr "Torneu a posar el dit sobre el lector."
+#: src/Widgets/PopoverWidget.vala:60
+msgid "Connect to Hidden Network…"
+msgstr "Connecta't a una xarxa oculta…"
 
-#~ msgid "Failed to match fingerprint"
-#~ msgstr "Ha fallat fer coincidir l'empremta."
+#: src/Widgets/PopoverWidget.vala:64
+msgid "Network Settings…"
+msgstr "Paràmetres de la xarxa…"
 
-#~ msgid "Verification timed out"
-#~ msgstr "S'ha esgotat el temps de verificació."
+#~ msgid "There are no wireless access points within range."
+#~ msgstr "No hi ha punts d'accés sense fil a l'abast."
 
-#~ msgid "Guest session"
-#~ msgstr "Sessió de convidat"
+#~ msgid "Wireless Is Disabled"
+#~ msgstr "El sense fil està inhabilitat"
 
-#~ msgid "%A, %B %e"
-#~ msgstr "%A, %e %B"
+#~ msgid "Enable wireless to discover nearby wireless access points."
+#~ msgstr "Habiliteu el sense fil per descobrir els punts d'accés propers."
 
-#~ msgid "%l:%M"
-#~ msgstr "%l.%M"
+#~ msgid "No VPN Available"
+#~ msgstr "No hi ha cap xarxa privada virtual disponible"
 
-#~ msgid " %p"
-#~ msgstr " %p"
+#~ msgid "Hotspot"
+#~ msgstr "Punt d'accés"
 
-#~ msgid "Login"
-#~ msgstr "Inicia la sessió"
+#~ msgid "Hotspot %s"
+#~ msgstr "Punt d'accés %s"
 
-#~ msgid "HighContrast"
-#~ msgstr "Contrast alt"
+#~ msgid "Disconnected"
+#~ msgstr "Desconnectat"
 
-#~ msgid "Hibernate"
-#~ msgstr "Hiberna"
+#~ msgid "Connected"
+#~ msgstr "Connectat"
 
-#~ msgid "Restart"
-#~ msgstr "Reinicia"
+#~ msgid "Failed"
+#~ msgstr "Ha fallat"
 
-#~ msgid "Suspend"
-#~ msgstr "Suspèn"
+#~ msgid "Connecting"
+#~ msgstr "Connectant"
 
-#~ msgid "Shutdown"
-#~ msgstr "Apaga"
+#~ msgid "Cable unplugged"
+#~ msgstr "Cable desconnectat"
 
-#~ msgid "Onscreen Keyboard"
-#~ msgstr "Teclat incorporat"
+#~ msgid "Airplane mode enabled"
+#~ msgstr "Mode d'avió activat"
 
-#~ msgid "%A, %B %e%v"
-#~ msgstr "%A %e de %B"
+#~ msgid "Unknown"
+#~ msgstr "Desconegut"

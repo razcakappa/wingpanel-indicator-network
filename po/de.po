@@ -1,138 +1,151 @@
-# German translation for pantheon-greeter
-# Copyright (c) 2012 Rosetta Contributors and Canonical Ltd 2012
-# This file is distributed under the same license as the pantheon-greeter package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: pantheon-greeter\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-17 11:07+0100\n"
-"PO-Revision-Date: 2018-08-20 00:06+0000\n"
+"POT-Creation-Date: 2018-05-02 11:10-0700\n"
+"PO-Revision-Date: 2018-06-02 19:59+0000\n"
 "Last-Translator: Jörg Arnold <j.ar@mailbox.org>\n"
-"Language-Team: German <https://weblate.elementary.io/projects/desktop/"
-"greeter/de/>\n"
+"Language-Team: German <https://weblate.elementary.io/projects/wingpanel"
+"/wingpanel-indicator-network/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0.1\n"
-"X-Launchpad-Export-Date: 2017-03-09 05:44+0000\n"
+"X-Generator: Weblate 2.18\n"
+"X-Launchpad-Export-Date: 2016-11-29 05:01+0000\n"
 
-#: compositor/WindowManager.vala:431
-msgid "Does the display look OK?"
+#: src/Indicator.vala:29
+msgid "Network"
+msgstr "Netzwerk"
+
+#: src/Indicator.vala:30
+msgid "Network indicator"
+msgstr "Netzwerkindikator"
+
+#: src/common/Widgets/AbstractEtherInterface.vala:25
+#, c-format
+msgid "Virtual network: %s"
+msgstr "Virtuelles Netzwerk: %s"
+
+#: src/common/Widgets/AbstractEtherInterface.vala:28
+msgid "Wired"
+msgstr "Verbunden"
+
+#: src/common/Widgets/AbstractModemInterface.vala:25
+#, c-format
+msgid "Mobile Broadband: %s"
+msgstr "Mobiles Breitband: %s"
+
+#: src/common/Widgets/AbstractModemInterface.vala:27
+msgid "Mobile Broadband"
+msgstr "Mobiles Breitband"
+
+#: src/common/Widgets/AbstractModemInterface.vala:33
+msgid "Modem"
+msgstr "Modem"
+
+#: src/common/Widgets/AbstractVpnInterface.vala:36
+#: src/common/Widgets/AbstractVpnInterface.vala:59
+msgid "VPN"
+msgstr "VPN"
+
+#: src/common/Widgets/AbstractWifiInterface.vala:49
+msgid "No Access Points Available"
+msgstr "Keine Netzwerke verfügbar"
+
+#: src/common/Widgets/AbstractWifiInterface.vala:63
+msgid "Scanning for Access Points…"
+msgstr "Drahtlose Netzwerke werden gesucht…"
+
+#: src/common/Widgets/AbstractWifiInterface.vala:106
+msgid "Wireless"
+msgstr "Drahtlosnetzwerk"
+
+#: src/common/Widgets/VpnMenuItem.vala:53
+msgid "This Virtual Private Network could not be connected to."
 msgstr ""
+"Zu diesem Virtuellen Privaten Netzwerk (VPN) konnte keine Verbindung "
+"aufgebaut werden."
 
-#: compositor/WindowManager.vala:434
-msgid "Keep This Configuration"
-msgstr ""
+#: src/common/Widgets/WidgetNMInterface.vala:22
+msgid "Unknown device"
+msgstr "Unbekanntes Gerät"
 
-#: compositor/WindowManager.vala:435
-msgid "Restore Previous Configuration"
-msgstr ""
+#: src/common/Widgets/WidgetNMInterface.vala:37
+#, c-format
+msgid "Unknown type: %s "
+msgstr "Unbekannter Typ: %s "
 
-#: src/PasswordEntry.vala:24 src/PasswordEntry.vala:25
-msgid "Password"
-msgstr ""
+#: src/common/Widgets/WifiMenuItem.vala:64
+msgid "This wireless network could not be connected to."
+msgstr "Es konnte keine Verbindung zum Drahtlosnetzwerk aufgebaut werden."
 
-#: src/PasswordEntry.vala:28 src/Cards/UserCard.vala:60
-msgid "Log In"
-msgstr "Anmelden"
+#: src/common/Widgets/WifiMenuItem.vala:130
+msgid "This network uses 40/64-bit WEP encryption"
+msgstr "Dieses Netzwerk verwendet eine 40/64-Bit WEP-Verschlüsselung"
 
-#: src/MainWindow.vala:53
-msgid "Log in as Guest"
-msgstr ""
+#: src/common/Widgets/WifiMenuItem.vala:133
+msgid "This network uses 104/128-bit WEP encryption"
+msgstr "Dieses Netzwerk verwendet eine 104/128-Bit-WEP-Verschlüsselung"
 
-#: src/MainWindow.vala:55
-#, fuzzy
-msgid "Manual Login…"
-msgstr "Manuell anmelden"
+#: src/common/Widgets/WifiMenuItem.vala:136
+msgid "This network uses WPA encryption"
+msgstr "Dieses Netzwerk verwendet eine WPA-Verschlüsselung"
 
-#: src/CapsLockRevealer.vala:27
-msgid "Caps Lock is on"
-msgstr ""
+#: src/common/Widgets/WifiMenuItem.vala:139
+msgid "This network uses encryption"
+msgstr "Dieses Netzwerk ist verschlüsselt"
 
-#: src/Cards/ManualCard.vala:15
-msgid "Manual Login"
-msgstr "Manuell anmelden"
+#: src/common/Widgets/WifiMenuItem.vala:141
+msgid "This network is unsecured"
+msgstr "Dieses Netzwerk ist unverschlüsselt"
 
-#: src/Cards/ManualCard.vala:22
-msgid "Username"
-msgstr ""
+#: src/Widgets/PopoverWidget.vala:60
+msgid "Connect to Hidden Network…"
+msgstr "Mit einem versteckten Netzwerk verbinden…"
 
-#: src/Cards/ManualCard.vala:26
-msgid "Try username"
-msgstr ""
+#: src/Widgets/PopoverWidget.vala:64
+msgid "Network Settings…"
+msgstr "Netzwerkeinstellungen…"
 
-#~ msgid "Swipe your finger"
-#~ msgstr "Wischen Sie mit dem Finger"
+#~ msgid "There are no wireless access points within range."
+#~ msgstr "Keine Wireless-Netzwerke in der Nähe."
 
-#~ msgid "Place your finger"
-#~ msgstr "Finger auflegen"
+#~ msgid "Wireless Is Disabled"
+#~ msgstr "Wireless deaktiviert"
 
-#~ msgid "Remove your finger and try again."
-#~ msgstr "Finger anheben und erneut versuchen."
+#~ msgid "Enable wireless to discover nearby wireless access points."
+#~ msgstr ""
+#~ "Aktivieren Sie den Drahtloszugang, um nach Drahtloszugangspunkten in der "
+#~ "Umgebung zu suchen."
 
-#~ msgid "Center your finger and try again."
-#~ msgstr "Finger mittig auflegen und erneut versuchen."
+#~ msgid "No VPN Available"
+#~ msgstr "Kein VPN verfügbar"
 
-#~ msgid "An unknown error occured"
-#~ msgstr "Ein unbekannter Fehler ist aufgetreten"
+#~ msgid "Hotspot"
+#~ msgstr "Hotspot"
 
-#~ msgid "Swipe your finger again"
-#~ msgstr "Wischen Sie noch einmal mit Ihrem Finger"
+#~ msgid "Hotspot %s"
+#~ msgstr "Hotspot %s"
 
-#~ msgid "Swipe was too short, try again"
-#~ msgstr "Der Wisch war zu kurz, versuch es noch mal"
+#~ msgid "Disconnected"
+#~ msgstr "Getrennt"
 
-#~ msgid "Your finger was not centered, try swiping your finger again"
-#~ msgstr "Ihr Finger war nicht mittig, versuchen Sie es noch einmal"
+#~ msgid "Connected"
+#~ msgstr "Verbunden"
 
-#~ msgid "Remove your finger, and try swiping your finger again"
-#~ msgstr "Entfernen Sie Ihren Finger und versuchen Sie es erneut"
+#~ msgid "Failed"
+#~ msgstr "Fehlgeschlagen"
 
-#~ msgid "Place your finger on the reader again"
-#~ msgstr "Legen Sie Ihren Finger erneut auf den Scanner"
+#~ msgid "Connecting"
+#~ msgstr "Verbindung wird hergestellt"
 
-#~ msgid "Failed to match fingerprint"
-#~ msgstr "Fingerabdruck konnte nicht abgeglichen werden"
+#~ msgid "Cable unplugged"
+#~ msgstr "Kabel nicht angeschlossen"
 
-#~ msgid "Verification timed out"
-#~ msgstr "Zeitüberschreitung bei der Verifizierung"
+#~ msgid "Airplane mode enabled"
+#~ msgstr "Flugzeugmodus  aktiviert"
 
-#~ msgid "Guest session"
-#~ msgstr "Gastsitzung"
-
-#~ msgid "%A, %B %e"
-#~ msgstr "%A, %e. %B"
-
-#~ msgid "%l:%M"
-#~ msgstr "%k:%M"
-
-#~ msgid " %p"
-#~ msgstr " %p"
-
-#~ msgid "Login"
-#~ msgstr "Anmelden"
-
-#~ msgid "HighContrast"
-#~ msgstr "Hoher Kontrast"
-
-#~ msgid "Onscreen Keyboard"
-#~ msgstr "Bildschirmtastatur"
-
-#~ msgid "Hibernate"
-#~ msgstr "Ruhezustand"
-
-#~ msgid "Suspend"
-#~ msgstr "Bereitschaft"
-
-#~ msgid "Shutdown"
-#~ msgstr "Herunterfahren"
-
-#~ msgid "%A, %B %e%v"
-#~ msgstr "%A, %e. %B"
-
-#~ msgid "Restart"
-#~ msgstr "Neu starten"
+#~ msgid "Unknown"
+#~ msgstr "Unbekannt"

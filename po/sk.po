@@ -1,125 +1,145 @@
-# Slovak translation for pantheon-greeter
-# Copyright (c) 2013 Rosetta Contributors and Canonical Ltd 2013
-# This file is distributed under the same license as the pantheon-greeter package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2013.
-# Martin Korpala <korpyk@gmail.com>, 2016.
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: pantheon-greeter\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-17 11:07+0100\n"
-"PO-Revision-Date: 2016-12-11 22:36+0000\n"
-"Last-Translator: Martin Korpala <Unknown>\n"
-"Language-Team: Slovak <>\n"
-"Language: sk\n"
+"POT-Creation-Date: 2018-05-02 11:10-0700\n"
+"PO-Revision-Date: 2016-07-05 18:32+0000\n"
+"Last-Translator: Ľubomír Hlavko <5lubo555@azet.sk>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2017-03-09 05:44+0000\n"
-"X-Generator: Launchpad (build 18330)\n"
+"X-Launchpad-Export-Date: 2016-11-29 05:01+0000\n"
+"X-Generator: Launchpad (build 18282)\n"
 
-#: compositor/WindowManager.vala:431
-msgid "Does the display look OK?"
+#: src/Indicator.vala:29
+msgid "Network"
+msgstr "Sieť"
+
+#: src/Indicator.vala:30
+msgid "Network indicator"
+msgstr "Indikátor siete"
+
+#: src/common/Widgets/AbstractEtherInterface.vala:25
+#, c-format
+msgid "Virtual network: %s"
+msgstr "Virtuálna sieť: %s"
+
+#: src/common/Widgets/AbstractEtherInterface.vala:28
+msgid "Wired"
+msgstr "Drôtové"
+
+#: src/common/Widgets/AbstractModemInterface.vala:25
+#, c-format
+msgid "Mobile Broadband: %s"
 msgstr ""
 
-#: compositor/WindowManager.vala:434
-msgid "Keep This Configuration"
+#: src/common/Widgets/AbstractModemInterface.vala:27
+msgid "Mobile Broadband"
 msgstr ""
 
-#: compositor/WindowManager.vala:435
-msgid "Restore Previous Configuration"
+#: src/common/Widgets/AbstractModemInterface.vala:33
+msgid "Modem"
 msgstr ""
 
-#: src/PasswordEntry.vala:24 src/PasswordEntry.vala:25
-msgid "Password"
+#: src/common/Widgets/AbstractVpnInterface.vala:36
+#: src/common/Widgets/AbstractVpnInterface.vala:59
+msgid "VPN"
 msgstr ""
 
-#: src/PasswordEntry.vala:28 src/Cards/UserCard.vala:60
-msgid "Log In"
-msgstr "Prihlásiť sa"
+#: src/common/Widgets/AbstractWifiInterface.vala:49
+msgid "No Access Points Available"
+msgstr "Žiadne dostupné prístupové body"
 
-#: src/MainWindow.vala:53
-msgid "Log in as Guest"
+#: src/common/Widgets/AbstractWifiInterface.vala:63
+msgid "Scanning for Access Points…"
 msgstr ""
 
-#: src/MainWindow.vala:55
+#: src/common/Widgets/AbstractWifiInterface.vala:106
+msgid "Wireless"
+msgstr ""
+
+#: src/common/Widgets/VpnMenuItem.vala:53
 #, fuzzy
-msgid "Manual Login…"
-msgstr "Manuálne prihlásenie"
+msgid "This Virtual Private Network could not be connected to."
+msgstr "K tejto bezdrôtovej sieti sa nejde pripojiť."
 
-#: src/CapsLockRevealer.vala:27
-msgid "Caps Lock is on"
-msgstr ""
+#: src/common/Widgets/WidgetNMInterface.vala:22
+msgid "Unknown device"
+msgstr "Neznáme zariadenie"
 
-#: src/Cards/ManualCard.vala:15
-msgid "Manual Login"
-msgstr "Manuálne prihlásenie"
+#: src/common/Widgets/WidgetNMInterface.vala:37
+#, c-format
+msgid "Unknown type: %s "
+msgstr "Neznámy typ: %s "
 
-#: src/Cards/ManualCard.vala:22
-msgid "Username"
-msgstr ""
+#: src/common/Widgets/WifiMenuItem.vala:64
+msgid "This wireless network could not be connected to."
+msgstr "K tejto bezdrôtovej sieti sa nejde pripojiť."
 
-#: src/Cards/ManualCard.vala:26
-msgid "Try username"
-msgstr ""
+#: src/common/Widgets/WifiMenuItem.vala:130
+#, fuzzy
+msgid "This network uses 40/64-bit WEP encryption"
+msgstr "Táto sieť používa šifrovanie WEP 40/64 bitov."
 
-#~ msgid "Swipe your finger"
-#~ msgstr "Potiahnite prstom"
+#: src/common/Widgets/WifiMenuItem.vala:133
+#, fuzzy
+msgid "This network uses 104/128-bit WEP encryption"
+msgstr "Táto sieť používa šifrovanie WEP 104/128 bitov."
 
-#~ msgid "Place your finger"
-#~ msgstr "Položte prst"
+#: src/common/Widgets/WifiMenuItem.vala:136
+#, fuzzy
+msgid "This network uses WPA encryption"
+msgstr "Táto sieť používa šifrovanie WPA."
 
-#~ msgid "Remove your finger and try again."
-#~ msgstr "Odstráňte prst a skúste znova."
+#: src/common/Widgets/WifiMenuItem.vala:139
+#, fuzzy
+msgid "This network uses encryption"
+msgstr "Táto sieť používa šifrovanie."
 
-#~ msgid "Center your finger and try again."
-#~ msgstr "Narovnajte prst a skúste znova."
+#: src/common/Widgets/WifiMenuItem.vala:141
+#, fuzzy
+msgid "This network is unsecured"
+msgstr "Táto sieť používa šifrovanie."
+
+#: src/Widgets/PopoverWidget.vala:60
+msgid "Connect to Hidden Network…"
+msgstr "Pripojiť sa k skrytej sieti..."
+
+#: src/Widgets/PopoverWidget.vala:64
+msgid "Network Settings…"
+msgstr "Nastavenia siete..."
+
+#~ msgid "There are no wireless access points within range."
+#~ msgstr "V dosahu nie sú k dispozícii žiadne bezdrôtové prístupové body."
+
+#~ msgid "Wireless Is Disabled"
+#~ msgstr "Bezdrôtové pripojenie je zakázané"
+
+#~ msgid "Enable wireless to discover nearby wireless access points."
+#~ msgstr ""
+#~ "Povoliť bezdrôtové pripojenie na objavenie okolitých bezdrôtových "
+#~ "prístupových bodov."
 
 #, fuzzy
-#~ msgid "Swipe your finger again"
-#~ msgstr "Potiahnite prstom"
+#~ msgid "No VPN Available"
+#~ msgstr "Žiadne dostupné prístupové body"
 
-#, fuzzy
-#~ msgid "Remove your finger, and try swiping your finger again"
-#~ msgstr "Odstráňte prst a skúste znova."
+#~ msgid "Disconnected"
+#~ msgstr "Odpojené"
 
-#, fuzzy
-#~ msgid "Place your finger on the reader again"
-#~ msgstr "Odstráňte prst a skúste znova."
+#~ msgid "Connected"
+#~ msgstr "Pripojený"
 
-#~ msgid "Guest session"
-#~ msgstr "Relácia pre hosťa"
+#~ msgid "Failed"
+#~ msgstr "Zlyhalo"
 
-#~ msgid "%A, %B %e"
-#~ msgstr "%A, %e. %B"
+#~ msgid "Connecting"
+#~ msgstr "Pripája sa"
 
-#~ msgid "%l:%M"
-#~ msgstr "%l:%M"
+#~ msgid "Cable unplugged"
+#~ msgstr "Kábel odpojený"
 
-#~ msgid " %p"
-#~ msgstr " %p"
-
-#~ msgid "HighContrast"
-#~ msgstr "Vysoký kontrast"
-
-#~ msgid "Onscreen Keyboard"
-#~ msgstr "Klávesnica na obrazovke"
-
-#~ msgid "Hibernate"
-#~ msgstr "Režim spánku"
-
-#~ msgid "Restart"
-#~ msgstr "Reštartovať"
-
-#~ msgid "Suspend"
-#~ msgstr "Uspať"
-
-#~ msgid "%A, %B %e%v"
-#~ msgstr "%A, %B %e%v"
-
-#~ msgid "Shutdown"
-#~ msgstr "Vypnúť"
-
-#~ msgid "Login"
-#~ msgstr "Prihlásenie"
+#~ msgid "Unknown"
+#~ msgstr "neznámy"

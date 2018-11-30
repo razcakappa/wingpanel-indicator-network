@@ -4,11 +4,20 @@ services:
  - docker
 
 env:
+<<<<<<< HEAD
  - DEPENDENCY_PACKAGES="desktop-file-utils libclutter-gtk-1.0-dev libgdk-pixbuf2.0-dev libgranite-dev libgtk-3-dev liblightdm-gobject-1-dev libwingpanel-2.0-dev libx11-dev meson libmutter-2-dev libgnome-desktop-3-dev valac"
 
 install:
  - docker pull elementary/docker:juno-unstable
  - docker run -v "$PWD":/tmp/build-dir elementary/docker:juno-unstable /bin/sh -c "apt-get update && apt-get -y install $DEPENDENCY_PACKAGES && cd /tmp/build-dir && meson build && ninja -C build test"
+=======
+ - DEPENDENCY_PACKAGES="gobject-introspection libgranite-dev libnm-dev libnma-dev libwingpanel-2.0-dev meson valac"
+
+install:
+ - docker pull elementary/docker:juno-unstable
+ - docker run -v "$PWD":/tmp/build-dir elementary/docker:juno-unstable /bin/sh -c "apt-get update && apt-get -y install $DEPENDENCY_PACKAGES && cd /tmp/build-dir && meson build --prefix=/usr && cd build && ninja"
+
+>>>>>>> a3c12af8f43659424f74b4e63e97fc3ca7f8bea3
 
 script:
  - echo BUILDS PASSED
